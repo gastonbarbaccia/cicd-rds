@@ -27,4 +27,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Import SQL Script
         run: |
-              mysql --host=${{DATABASE_HOST}} --user=${{DATABASE_USERNAME}} --password=${{DATABASE_PASSWORD}} --database ${{DATABASE_NAME}} < ${{DATABASE_SCRIPT}}
+              mysql --host=$DATABASE_HOST --user=$DATABASE_USERNAME --password=$DATABASE_PASSWORD --database $DATABASE_NAME < $DATABASE_SCRIPT
