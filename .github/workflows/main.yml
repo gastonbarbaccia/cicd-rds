@@ -10,10 +10,10 @@ on:
 
 
 env:
-  DATABASE_HOST: 'u463129590-github-actions.capjeqwtb4vf.us-east-2.rds.amazonaws.com'
-  DATABASE_NAME: 'u463129590_github_actions'
-  DATABASE_USERNAME: 'admin'
-  DATABASE_PASSWORD: 'Ns2b7bfqbf!'
+  DATABASE_HOST: ${{secrets.SERVER_REMOTE}}
+  DATABASE_NAME: ${{secrets.SERVER_DB_NAME}}
+  DATABASE_USERNAME: ${{secrets.SERVER_DB_USERNAME}}
+  DATABASE_PASSWORD:  ${{secrets.SERVER_DB_PASSWORD}}
   DATABASE_SCRIPT: 'script.sql'
  
 
